@@ -6,6 +6,7 @@ import { auth } from '../utils/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { BACKGROUND_IMAGE, USER_LOGO } from '../utils/constants';
 
 const Login = () => {
     const navigate = useNavigate()
@@ -32,7 +33,7 @@ const Login = () => {
                     // Signed up 
                     const user = userCredential.user;
                     updateProfile(auth.currentUser, {
-                        displayName: name.current.value, photoURL: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png'
+                        displayName: name.current.value, photoURL: USER_LOGO
                     }).then(() => {
                         const { uid, email, displayName, photoURL } = auth.currentUser;
                         dispatch(addUser({ uid: uid, email: email, displayName: displayName, photoURL: photoURL }))
@@ -72,7 +73,7 @@ const Login = () => {
         <div >
             <Header />
             <div className='absolute'>
-                <img src='https://assets.nflxext.com/ffe/siteui/vlv3/4ffe3d37-1fc1-4d93-b61a-1fa58c11ccff/web/IN-en-20251124-TRIFECTA-perspective_9f00d07d-f08e-494f-8907-92371138c534_large.jpg' alt="background" />
+                <img src={BACKGROUND_IMAGE} alt="background" />
             </div>
             <form onSubmit={(e) => e.preventDefault()} className='p-12 absolute bg-black w-3/12 my-36 mx-auto right-0 left-0 text-white bg-opacity-80'>
                 <h1 className='font-bold text-3xl p-2'>
