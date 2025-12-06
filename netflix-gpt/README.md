@@ -10,7 +10,7 @@
 --Firebase setup
 --Deploying our app to production
 --Create sign up user account
---Implement sign in user api
+--Implement sign in user api 
 --created redux store with userSlice
 -- Implemented Sign out
 -- Update Profile
@@ -18,6 +18,18 @@
 -- Bug fix: if the user is nt logged in redirect to /browse to login and vice versa
 -- Unsubscribe to the onAuthStateChanged callback
 -- Add hardcoded values to the constant file
+-- Register TMDB API & create an app & get access token
+-- Get data from TMDB now playing movies list API
+-- Created custom hook-for now playing movies
+-- Create movieSlice
+-- Update store to movie data
+-- Planning for mainContainer & secondary container
+-- Fetch data for trailer video
+-- Update store with Trailer video data
+-- Embedded the youtue video and make it autoplay and mute
+-- Tailwind classes to make container look awesome
+--
+
 
 
 # Features
