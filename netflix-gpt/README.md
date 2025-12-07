@@ -1,17 +1,17 @@
 # Netflix-GPT
 - Create react app
 - Configure tailwind css
---Header
---Login Form
---Sign up Form
---Routing
---Form Validation -Try the name validation
---useRef hook
---Firebase setup
---Deploying our app to production
---Create sign up user account
---Implement sign in user api 
---created redux store with userSlice
+-- Header
+-- Login Form
+-- Sign up Form
+-- Routing
+-- Form Validation -Try the name validation
+-- useRef hook
+-- Firebase setup
+-- Deploying our app to production
+-- Create sign up user account
+-- Implement sign in user api 
+-- created redux store with userSlice
 -- Implemented Sign out
 -- Update Profile
 -- Bug fix: sign up user displayName and profile picture update
